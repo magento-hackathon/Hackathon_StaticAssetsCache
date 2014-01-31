@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hackathon_StaticAssets>
+            <version>0.0.1</version>
+        </Hackathon_StaticAssets>
+    </modules>
+    <global>
+        <blocks>
+            <hackathon_staticassets>
+                <class>Hackathon_StaticAssets_Block</class>
+            </hackathon_staticassets>
+        </blocks>
+        <helpers>
+            <hackathon_staticassets>
+                <class>Hackathon_StaticAssets_Helper</class>
+            </hackathon_staticassets>
+        </helpers>
+        <models>
+            <hackathon_staticassets>
+                <class>Hackathon_StaticAssets_Model</class>
+            </hackathon_staticassets>
+        </models>
+    </global>
+</config>
