@@ -21,5 +21,14 @@
                 <class>Hackathon_StaticAssets_Model</class>
             </hackathon_staticassets>
         </models>
+        <cache>
+            <types>
+                <static_assets translate="label,description" module="core">
+                    <label>Static Assets</label>
+                    <description>CSS, JavaScript</description>
+                    <tags>STATIC_ASSETS</tags>
+                </static_assets>
+            </types>
+        </cache>
     </global>
 </config>
