@@ -61,6 +61,12 @@ class Hackathon_StaticAssetsCache_Block_Html_Head
         return $html;
     }
 
+    /**
+     * fetch timestamp from cache if set
+     *
+     * @param $src full HTTP url to asset
+     * @return mixed
+     */
     protected function _assetCache($src)
     {
         return $this->getLayout()

@@ -3,6 +3,14 @@
 class Hackathon_StaticAssetsCache_Block_Html_Asset
     extends Mage_Core_Block_Template
 {
+
+    /**
+     * Check to see if cache tag is active and return
+     * timestamp if set
+     *
+     * @param $src full HTTP url to asset
+     * @return string
+     */
     public function getAsset($src)
     {
         $cache_helper = 'hackathon_staticassetscache/cache';
