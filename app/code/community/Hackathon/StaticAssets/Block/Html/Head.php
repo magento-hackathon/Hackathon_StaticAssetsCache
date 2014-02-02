@@ -63,6 +63,12 @@ class Hackathon_StaticAssets_Block_Html_Head
 
     protected function _assetCache($src)
     {
-        return $src . '?v=' . gmmktime();
+        if(false === ($load = $this->helper('hackathon_staticassets/cache')->load($src))) {
+            $this->helper('hackathon_staticassets/cache')->save($src);
+
+            $load = $this->helper('hackathon_staticassets/cache')->load($src);
+        }
+
+        return $src . '?v=' . $load;
     }
 } 
