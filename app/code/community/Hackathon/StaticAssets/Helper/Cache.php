@@ -21,6 +21,13 @@ class Hackathon_StaticAssets_Helper_Cache
         );
     }
 
+    public function isCacheAvailable()
+    {
+        $type = strtolower(self::CACHE_TAG);
+
+        return (bool)Mage::app()->useCache($type);
+    }
+
     public function getCacheKey($key)
     {
         return $this->_buildCacheKey($key);

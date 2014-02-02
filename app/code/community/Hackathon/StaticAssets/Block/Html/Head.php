@@ -63,6 +63,11 @@ class Hackathon_StaticAssets_Block_Html_Head
 
     protected function _assetCache($src)
     {
+        if(false === $this->helper('hackathon_staticassets/cache')->isCacheAvailable())
+        {
+            return $src;
+        }
+
         if(false === ($load = $this->helper('hackathon_staticassets/cache')->load($src))) {
             $this->helper('hackathon_staticassets/cache')->save($src);
 
