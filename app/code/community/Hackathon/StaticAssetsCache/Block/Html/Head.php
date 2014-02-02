@@ -63,17 +63,8 @@ class Hackathon_StaticAssetsCache_Block_Html_Head
 
     protected function _assetCache($src)
     {
-        if(false === $this->helper('hackathon_staticassetscache/cache')->isCacheAvailable())
-        {
-            return $src;
-        }
-
-        if(false === ($load = $this->helper('hackathon_staticassetscache/cache')->load($src))) {
-            $this->helper('hackathon_staticassetscache/cache')->save($src);
-
-            $load = $this->helper('hackathon_staticassetscache/cache')->load($src);
-        }
-
-        return $src . '?v=' . $load;
+        return $this->getLayout()
+            ->createBlock('hackathon_staticassetscache/html_asset')
+            ->getAsset($src);
     }
 } 
