@@ -7,6 +7,11 @@
     </modules>
     <global>
         <blocks>
+            <page>
+                <rewrite>
+                    <html_head>Hackathon_StaticAssets_Block_Html_Head</html_head>
+                </rewrite>
+            </page>
             <hackathon_staticassets>
                 <class>Hackathon_StaticAssets_Block</class>
             </hackathon_staticassets>
