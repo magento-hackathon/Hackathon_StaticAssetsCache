@@ -1,7 +1,7 @@
 # Hackaton - StaticAssets
 
 # Module Code
-app/code/community/Hackathon/StaticAssets    app/code/community/Hackathon/StaticAssets
+app/code/community/Hackathon/StaticAssetsCache    app/code/community/Hackathon/StaticAssetsCache
 
 # Module Initializer
-app/etc/modules/Hackathon_StaticAssets.xml    app/etc/modules/Hackathon_StaticAssets.xml
+app/etc/modules/Hackathon_StaticAssetsCache.xml    app/etc/modules/Hackathon_StaticAssetsCache.xml

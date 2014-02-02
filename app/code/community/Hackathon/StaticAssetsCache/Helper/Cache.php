@@ -1,6 +1,6 @@
 <?php
 
-class Hackathon_StaticAssets_Helper_Cache
+class Hackathon_StaticAssetsCache_Helper_Cache
     extends Mage_Core_Helper_Abstract
 {
     const CACHE_TAG = 'STATIC_ASSETS';

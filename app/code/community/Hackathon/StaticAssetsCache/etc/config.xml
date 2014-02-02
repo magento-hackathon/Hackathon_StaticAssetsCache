@@ -1,30 +1,30 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Hackathon_StaticAssets>
+        <Hackathon_StaticAssetsCache>
             <version>0.0.1</version>
-        </Hackathon_StaticAssets>
+        </Hackathon_StaticAssetsCache>
     </modules>
     <global>
         <blocks>
             <page>
                 <rewrite>
-                    <html_head>Hackathon_StaticAssets_Block_Html_Head</html_head>
+                    <html_head>Hackathon_StaticAssetsCache_Block_Html_Head</html_head>
                 </rewrite>
             </page>
-            <hackathon_staticassets>
-                <class>Hackathon_StaticAssets_Block</class>
-            </hackathon_staticassets>
+            <hackathon_staticassetscache>
+                <class>Hackathon_StaticAssetsCache_Block</class>
+            </hackathon_staticassetscache>
         </blocks>
         <helpers>
-            <hackathon_staticassets>
-                <class>Hackathon_StaticAssets_Helper</class>
-            </hackathon_staticassets>
+            <hackathon_staticassetscache>
+                <class>Hackathon_StaticAssetsCache_Helper</class>
+            </hackathon_staticassetscache>
         </helpers>
         <models>
-            <hackathon_staticassets>
-                <class>Hackathon_StaticAssets_Model</class>
-            </hackathon_staticassets>
+            <hackathon_staticassetscache>
+                <class>Hackathon_StaticAssetsCache_Model</class>
+            </hackathon_staticassetscache>
         </models>
         <cache>
             <types>
